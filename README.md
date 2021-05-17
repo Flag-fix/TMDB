@@ -1,2 +1,0 @@
-# TMDB
-TMDB em Laravel
