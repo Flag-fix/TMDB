@@ -2,5 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'index');
-Route::view('/filmes', 'show');
+Route::prefix('')->name('home.')->group(function (){
+    Route::resource('filmes', \App\Http\Controllers\FilmesController::class);
+});
